@@ -1,0 +1,339 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+   
+    
+    <!--bootstarp css CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!--bootstrap js bundle CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navigation start-->
+    <nav  class="navbar navbar-expand-lg navbar-dark " style="background-color: blueviolet;">
+
+        <div    class="container">
+            <a class="navbar-brand">
+                <img src="./images/png-transparent-computer-icons-shopping-cart-e-commerce-add-to-cart-button-purple-angle-text.png" style="width: 40px; border-radius: 25%;">
+
+                STORE-Z
+            </a>
+
+        </div> 
+
+    </nav>
+    <!--Navigation end-->
+    <br>
+
+    <div class="container">
+        <h1>Product Details</h1>
+        <br>
+        <!--product display Grid start-->
+        <div class="row">
+            <div class="col-6">
+                <img src="./images/newpoco-m2-green.jpeg" style="width: 60%;height: 350px; margin-left: 30px;">
+
+                <!--secondary images start-->
+                <br>
+                <br>
+                <div class="row" >
+                    <div class="col-4">
+                        <div class="border border-dark" style="width:60%; height:100px ;">
+                           <img src="./images/m1-poco-m2-pro-front.png" style="width: 80%; height: 90px; margin-left: 13%; padding-top: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border-dark" style="width:60%; height:100px ;">
+                          <img src="./images/m2-poco-m2-pro-mzb9625in-original-imaftga3xrptrbh5.webp" style="width: 40%; height: 90px;margin-left: 30%;padding-top: 10px;">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="border border-dark" style="width:60%; height:100px ; ">
+                           <img src="./images/m3-poco-m2-pro-mzb9625in-original-imafu769wfc59zsu.webp" style="width: 90%; padding-top: 15px ; padding-left: 10px;">
+                        </div>
+                    </div>
+
+                </div>
+                <!--secondary images start-->
+
+            </div>
+
+            <div class="col-6">
+                <h2>POCO M2 Pro </h2>
+                <p>Poco 4GB RAM,128GB ROM,64MP Camera</p>
+
+                <h2 style="color: blueviolet;">&#8377; 12,999.00</h2>
+                <br>
+
+                <h5>Available offers</h5>
+                <p>
+                    <ul>
+
+                      <li>Bank Offer 5% Cashback on Flipkart Axis Bank CardT&C</li> 
+
+                        <li>Extra ₹200 Off on Bikes & Scooters on purchase of ₹10,000 </li>
+
+                        <li>Partner OfferSign-up for Flipkart Pay Later & get free Times Prime Benefits worth ₹3,000</li>
+
+                        <li>Partner OfferPurchase now & get 1 surprise cashback coupon in Future</li>
+
+                   </ul>
+                </p>
+                <br>
+                
+
+                <!--buttons starts-->
+                   <div class="row">
+                      <div class="col-1"></div>
+                          <div class="col-5">
+                            <button class="btn btn-primary" style="width: 100%;" data-bs-toggle="modal" data-bs-target="#customerOrederpop">Buy Now</button>
+
+                        </div>
+
+                       <div class="col-6">
+                          <a href="#"
+                            style="text-decoration: none;">Add to Cart</a>
+
+                        </div>   
+
+                    </div>
+
+
+                <!--buttons end-->
+            </div>
+
+        </div>
+       <!--product display Grid start-->
+
+
+    </div>
+
+    <!--customer order popup start-->
+
+    <div class="modal fade" id="customerOrederpop" tabindex="-1 " role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title"> Enter shipping Details </h5>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Please Enter shipping Deatils
+
+                    </p>
+
+                    <p>
+                        <label>Name</label>
+                        <input type="text" class="form-control" id="Name">
+                        <span id="errMsgName" style="color: red;"></span>
+                    </p>
+
+                    <p>
+                        <label>E-mail</label>
+                        <input type="text" class="form-control" id="Email">
+                        <span id="errMsgEmail" style="color: red;"></span>
+                    </p>
+
+                    <p>
+                        <label>Mobile-No</label>
+                        <input type="text" class="form-control" id="Mobile">
+                        <span id="errMsgMobile"  style="color: red;"></span>
+                    </p>
+                    <p>
+                        <label>shipping Address line 1</label>
+                        <input type="text" class="form-control" id="Ship1">
+                        <span id="errMsgShip1"  style="color: red;"></span>
+                    </p>
+                        <p>
+                        <label>shipping Address line 2</label>
+                        <input type="text" class="form-control" id="Ship2">
+                        <span id="errMsgShip2"  style="color: red;"></span>
+                    </p>
+
+                    <button class="btn btn-success" style="width: 100%;" onclick="Buyconfirm()"> Submit</button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <!--customer order popup start-->
+
+    <br>
+    <br>
+
+   
+
+    <script>
+
+        function Buyconfirm()
+        {
+          // Read value from Name test box
+          var Name = document.getElementById('Name').value;
+
+          if (Name=='')
+          {
+
+            document.getElementById('errMsgName').innerHTML='Please Enter Name'
+            return false
+
+          }
+
+          else
+          {
+            document.getElementById('errMsgName').innerHTML=''
+          
+          }
+
+          var regxName = /^[A-Za-z.]+$/
+
+          var validName = Name.match(regxName)
+
+          if(!validName)
+          {
+            document.getElementById('errMsgName').innerHTML='Please Enter Valid Name'
+            return false
+          }
+
+          else
+          {
+            document.getElementById('errMsgName').innerHTML=''
+          }
+          
+
+          // Read value from E-mial test box
+          var Email = document.getElementById('Email').value;
+
+          if (Email=='')
+          {
+
+            document.getElementById('errMsgEmail').innerHTML='Please Enter Email'
+            return false
+
+          }
+
+          else
+          {
+            document.getElementById('errMsgEmail').innerHTML=''
+          
+          }
+
+          var regxEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          var validEmail = Email.match(regxEmail)
+
+          if(!validEmail)
+          {
+            document.getElementById('errMsgEmail').innerHTML='Please Enter Valid Email'
+            return false
+          }
+          
+          else
+          {
+            document.getElementById('errMsgEmail').innerHTML=''
+          }
+
+
+
+          // Read value from Mobile test box
+          var Mobile = document.getElementById('Mobile').value;
+
+          if (Mobile=='')
+          {
+
+            document.getElementById('errMsgMobile').innerHTML='Please Enter Mobile Number'
+            return false
+
+          }
+
+          else
+          {
+            document.getElementById('errMsgMobile').innerHTML=''
+          
+          }
+
+          var regxMobile = /^[0-9]+$/
+
+          var validMobile = Mobile.match(regxMobile)
+
+          if(!validMobile)
+          {
+            document.getElementById('errMsgMobile').innerHTML='Please Enter Valid  Mobile Number'
+            return false
+          }
+
+
+          else
+          {
+            document.getElementById('errMsgMobile').innerHTML=''
+          }
+
+
+          // Read value from ship1 test box
+          var Ship1 = document.getElementById('Ship1').value;
+
+          if (Ship1=='')
+          {
+
+            document.getElementById('errMsgShip1').innerHTML='Please Enter Shipping Deatils'
+            return false
+
+          }
+
+          else
+          {
+            document.getElementById('errMsgShip1').innerHTML=''
+          
+          }
+          
+            // Read value from Ship2 test box
+          var Ship2 = document.getElementById('Ship2').value;
+
+          if (Ship2=='')
+          {
+
+            document.getElementById('errMsgShip2').innerHTML='Please Enter Shipping Deatils'
+            return false
+
+          }
+
+          else
+          {
+            document.getElementById('errMsgShip2').innerHTML=''
+          
+          }
+
+          
+          
+
+        }
+    
+
+          
+
+     
+
+
+
+
+       
+    </script>
+
+    
+</body>
+</html>

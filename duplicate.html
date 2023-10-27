@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <style>
+        #comment-box {
+            width: 300px;
+        }
+
+        #comment-display {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="comment-box">
+        <textarea id="user-comment" rows="4" placeholder="Enter your comment"></textarea>
+        <button id="add-comment">Add Comment</button>
+    </div>
+    <div id="comment-display"></div>
+
+
+
+
+    <script >
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const userCommentInput = document.getElementById("user-comment");
+            const commentDisplay = document.getElementById("comment-display");
+            const addCommentButton = document.getElementById("add-comment");
+
+            addCommentButton.addEventListener("click", function () {
+                const commentText = userCommentInput.value;
+
+                if (commentText.trim() !== "") {
+                    const commentElement = document.createElement("div");
+                    commentElement.innerHTML = `<span>&#9733;</span> ${commentText}`; // Star symbol
+                    commentElement.style.marginBottom = "10px";
+                    commentDisplay.appendChild(commentElement);
+
+                    // Clear the input field
+                    userCommentInput.value = "";
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

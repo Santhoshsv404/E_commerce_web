@@ -1,0 +1,28 @@
+h2{
+    font-size: 50px; text-align: center; color: brown ; 
+
+}
+
+ #colorandalignment{
+    font-size: 90px;
+    color: white;
+    background-color: black;
+    text-align: center;
+ 
+}
+
+  .typography{
+         font-size: 50px;
+     
+}
+
+  .color{
+    color: aqua;
+    background-color: peru;
+
+
+}.alignment{
+      text-align: center;
+      margin-top: 10px;
+}
+
